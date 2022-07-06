@@ -3,9 +3,13 @@ const app = Vue.createApp({
     return {
       counter: 0,
       numbers: 0,
+      name:'',
     };
   },
   methods:{
+    setName(event){
+      this.name = event.target.value;
+    },
     setJump(event){
       this.numbers = event.target.value;
     },
